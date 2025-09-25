@@ -4,10 +4,6 @@ body {
   padding:0;
 }
 
-img {
-  width: 100vw;
-}
-
 ul{
   position:absolute;
   top:19px;
@@ -29,22 +25,6 @@ ul{
 .btn{
   position:absolute;
   top:50%;
-}
-
-.strip{
-  width:100%;
-  height:100%;
-  display:flex;
-}
-
-.frame{
-  width:100vw;
-  height:100vh;
-  overflow:auto;
-}
-
-.frame::-webkit-scrollbar {
-  display: none;
 }
 
 .dropdown-menu{
@@ -73,4 +53,18 @@ ul{
     transform:scaleY(1);
     opacity:100%;
   }
+}
+
+.strip{
+  display:flex;
+  overflow:auto;
+}
+
+.strip::-webkit-scrollbar{
+  display:none;
+}
+
+.strip>img{
+  min-width:100vw;
+  height:100vh;
 }
