@@ -1,4 +1,5 @@
 import "./styles/main.scss";
+import {colorado, iceland, waterfall, autumn, sea, flowers, creek, mountains} from "./carousel";
 
 const body = document.body;
 const page = document.createElement("div");
