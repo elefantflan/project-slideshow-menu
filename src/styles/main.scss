@@ -10,7 +10,7 @@ img {
 
 ul{
   position:absolute;
-  top:30px;
+  top:19px;
   right:0;
   list-style-type: none;
   padding:0;
@@ -21,7 +21,9 @@ ul{
   position:absolute;
   right:0;
   margin:0;
-  padding:0;
+  padding:2px 5px 2px 5px;
+  background-color: rgba(255, 255, 255, 0.749);
+  border:none;
 }
 
 .btn{
@@ -43,4 +45,32 @@ ul{
 
 .frame::-webkit-scrollbar {
   display: none;
+}
+
+.dropdown-menu{
+  display:none;
+}
+
+.dropdown-menu>li{
+  background-color: rgba(255, 255, 255, 0.661);
+  padding:5px;
+  padding-right:40px;
+}
+
+.visible {
+  display:block;
+  animation-name:menuDrop;
+  animation-duration:1s;
+  transform-origin: top;
+}
+
+@keyframes menuDrop{
+  from{
+    transform: scaleY(0);
+    opacity:0%;
+  }
+  to{
+    transform:scaleY(1);
+    opacity:100%;
+  }
 }
